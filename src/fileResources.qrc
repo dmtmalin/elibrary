@@ -1,0 +1,85 @@
+<RCC>
+    <qresource prefix="/">
+        <file>png/Add.png</file>
+        <file>png/Applications.png</file>
+        <file>png/Backward.png</file>
+        <file>png/Ball Blue.png</file>
+        <file>png/Ball Green.png</file>
+        <file>png/Ball Red.png</file>
+        <file>png/Ball Yellow.png</file>
+        <file>png/Book.png</file>
+        <file>png/Burn.png</file>
+        <file>png/Cancel.png</file>
+        <file>png/CD.png</file>
+        <file>png/Chart.png</file>
+        <file>png/Chat Bubble Alt.png</file>
+        <file>png/Chat Bubble.png</file>
+        <file>png/Checkmark.png</file>
+        <file>png/Connect.png</file>
+        <file>png/Copy.png</file>
+        <file>png/Cut.png</file>
+        <file>png/Delete.png</file>
+        <file>png/Desktop Alt.png</file>
+        <file>png/Desktop.png</file>
+        <file>png/Document.png</file>
+        <file>png/Down.png</file>
+        <file>png/Edit Alt.png</file>
+        <file>png/Edit.png</file>
+        <file>png/Favorites Add.png</file>
+        <file>png/Favorites Remove.png</file>
+        <file>png/Favorites.png</file>
+        <file>png/Folder Alt.png</file>
+        <file>png/Folder.png</file>
+        <file>png/Forward.png</file>
+        <file>png/Globe Alt.png</file>
+        <file>png/Globe.png</file>
+        <file>png/Harddisk.png</file>
+        <file>png/Help Alt.png</file>
+        <file>png/Help.png</file>
+        <file>png/History.png</file>
+        <file>png/Home.png</file>
+        <file>png/Image.png</file>
+        <file>png/Information.png</file>
+        <file>png/Left.png</file>
+        <file>png/Light Bulb Off.png</file>
+        <file>png/Light Bulb On.png</file>
+        <file>png/Mail Alt.png</file>
+        <file>png/Mail.png</file>
+        <file>png/Music.png</file>
+        <file>png/Network.png</file>
+        <file>png/OK.png</file>
+        <file>png/Paint.png</file>
+        <file>png/Paste.png</file>
+        <file>png/Pause.png</file>
+        <file>png/Pencil.png</file>
+        <file>png/Phone.png</file>
+        <file>png/Play.png</file>
+        <file>png/Print.png</file>
+        <file>png/Protection.png</file>
+        <file>png/Recycle.png</file>
+        <file>png/Refresh.png</file>
+        <file>png/Remove.png</file>
+        <file>png/Right.png</file>
+        <file>png/Ruler.png</file>
+        <file>png/Save As.png</file>
+        <file>png/Save.png</file>
+        <file>png/Seal.png</file>
+        <file>png/Search.png</file>
+        <file>png/Smiley.png</file>
+        <file>png/Star.png</file>
+        <file>png/Stop Alt.png</file>
+        <file>png/Stop.png</file>
+        <file>png/Tool.png</file>
+        <file>png/Trash Empty.png</file>
+        <file>png/Trash Full.png</file>
+        <file>png/Up.png</file>
+        <file>png/User Alt.png</file>
+        <file>png/User.png</file>
+        <file>png/Users.png</file>
+        <file>png/View.png</file>
+        <file>png/Warning.png</file>
+        <file>png/Zoom In.png</file>
+        <file>png/Zoom Out.png</file>
+        <file>Double-J-Design-Ravenna-3d-Book.ico</file>
+    </qresource>
+</RCC>
