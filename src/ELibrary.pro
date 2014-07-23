@@ -23,7 +23,16 @@ SOURCES += main.cpp\
     listwidgetdialogone.cpp \
     checkcombobox.cpp \
     checklineedit.cpp \
-    fileutils.cpp
+    fileutils.cpp \
+    checkcomboboxlist.cpp \
+    mytracer.cpp \
+    appsettings.cpp \
+    checkdatepicker.cpp \
+    watcher.cpp \
+    objfile.cpp \
+    viewlistwidget.cpp \
+    objrecord.cpp \
+    convertwkhtmltopdf.cpp
 
 HEADERS  += mainwidget.h \
     smartlineedit.h \
@@ -35,7 +44,16 @@ HEADERS  += mainwidget.h \
     listwidgetdialogone.h \
     checkcombobox.h \
     checklineedit.h \
-    fileutils.h
+    fileutils.h \
+    checkcomboboxlist.h \
+    mytracer.h \
+    appsettings.h \
+    checkdatepicker.h \
+    watcher.h \
+    objfile.h \
+    viewlistwidget.h \
+    objrecord.h \
+    convertwkhtmltopdf.h
 
 RESOURCES += \
     fileResources.qrc

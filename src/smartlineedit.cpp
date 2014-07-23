@@ -80,6 +80,15 @@ void SmartLineEdit::autosubstitution(int start, const QString &line){
     }
 }
 
+void SmartLineEdit::setArrayValues(const QStringList &arr){
+    QString text;
+    for(int i(0); i < arr.count(); ++i){
+        text += arr.at(i) + ',';
+    }
+    text.remove(text.count() - 1, 1);
+    this->setText(text);
+}
+
 void SmartLineEdit::setArray(const QStringList &arr) {
     this->array = new QStringList(arr);
 }
@@ -99,7 +108,7 @@ void SmartLineEdit::keyPressEvent(QKeyEvent *event) {
 
 }
 
-QStringList SmartLineEdit::getArrayValues() {
+QStringList SmartLineEdit::getArrayValues() {    
     QRegExp rx("(\\,|\\;|\\.)");
     QString text = this->text().remove(' ');
     QStringList array = text.split(rx);

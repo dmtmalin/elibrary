@@ -1,6 +1,9 @@
 #ifndef CHECKCOMBOBOX_H
 #define CHECKCOMBOBOX_H
 
+#include <mngrconnection.h>
+#include <mngrquerys.h>
+
 #include <QMap>
 #include <QWidget>
 #include <QVariant>
@@ -13,13 +16,18 @@ class CheckComboBox : public QWidget
     Q_OBJECT
 public:
     explicit CheckComboBox(QWidget *parent = 0);
-    void setCheckBoxText(const QString str);
-    void setComboBoxItems(const QMap<QString, int> &items);
+
+public:
+    enum TYPE { THEMES };
+    void init(TYPE type);
+
     QCheckBox *checkBox;
     QComboBox *comboBox;
-    QVariant getValue();
+    QVariant getValue();  
 
-signals:
+private:
+    void setComboBoxItemsThemes();
+    void switchInit(TYPE &type);   
 
 private slots:
     void on_checkBox_clicked();

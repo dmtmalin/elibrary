@@ -1,16 +1,10 @@
 #include "mngrconnection.h"
 
 MngrConnection::MngrConnection()
-{
-    QString application_dir = QApplication::applicationDirPath();
-    QString settings_path = application_dir + "/settings.ini";
-    QSettings settings(settings_path, QSettings::IniFormat);
-    //settings.setValue("database", "/ELIBRARY.FDB");
-    //settings.setValue("username", "SYSDBA");
-    //settings.setValue("password", "masterkey");
-    QString db_path = application_dir + settings.value("database", "").toString();
-    QString username = settings.value("username", "").toString();
-    QString password = settings.value("password", "").toString();
+{   
+    QString db_path = AppSettings::Instance().getDB_path();
+    QString username = AppSettings::Instance().getUsername();
+    QString password = AppSettings::Instance().getPassword();
 
     db = QSqlDatabase::addDatabase("QIBASE");
     db.setDatabaseName(db_path);
@@ -52,6 +46,6 @@ bool MngrConnection::isOpen() {
     return db.isOpen();
 }
 
-QSqlError MngrConnection::lastError() {
+QString MngrConnection::lastError() {
     return db.lastError().text();
 }

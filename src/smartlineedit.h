@@ -10,10 +10,12 @@ class SmartLineEdit : public QLineEdit
 public:
     explicit SmartLineEdit(QWidget *parent = 0);
     void setArray(const QStringList &arr);
+    void setArrayValues(const QStringList &arr);
     QStringList getArrayValues();
     QStringList getArray();
     void setSingleMode();
     QString getValue();
+
     ~SmartLineEdit();
 
 protected:

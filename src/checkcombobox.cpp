@@ -16,18 +16,33 @@ CheckComboBox::CheckComboBox(QWidget *parent) :
     this->setLayout(layout);
 }
 
-void CheckComboBox::setCheckBoxText(const QString str){
-    checkBox->setText(str);
+void CheckComboBox::init(TYPE type){
+    this->switchInit(type);
+
 }
 
-void CheckComboBox::setComboBoxItems(const QMap<QString, int> &items){
+void CheckComboBox::switchInit(TYPE &type){
+    switch(type) {
+        case THEMES:
+            checkBox->setText(AppResources::getThemeStr());
+            this->setComboBoxItemsThemes();
+            break;
+    }
+}
+
+void CheckComboBox::setComboBoxItemsThemes(){
+    MngrConnection::Instance().transaction();
+    QMap<QString, int> themes = MngrQuerys::getThemesId();
+    MngrConnection::Instance().commit();
     comboBox->clear();
-    QMapIterator<QString, int> i(items);
+    QMapIterator<QString, int> i(themes);
     while (i.hasNext()) {
         i.next();
         comboBox->addItem(i.key(), i.value());
     }
+    comboBox->setCurrentIndex(-1);
 }
+
 
 void CheckComboBox::on_checkBox_clicked(){
     if(checkBox->isChecked())

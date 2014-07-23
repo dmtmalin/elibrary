@@ -24,24 +24,12 @@ const QString AppResources::getDescriptionStr() {
     return QObject::tr("Описание");
 }
 
-const QString AppResources::getAddThemeTagsStr() {
-    return QObject::tr("+ из справочника");
-}
-
 const QString AppResources::getAddFilesStr() {
     return QObject::tr("+ файлы");
 }
 
-const QString AppResources::getAddBookReportStr() {
-    return QObject::tr("Запись %1 добавлена\n• Автор: %2\n• Тема: %3");
-}
-
-const QString AppResources::getMenuStr() {
-    return QObject::tr("&Меню");
-}
-
-const QString AppResources::getMenuNewRecordStr() {
-    return QObject::tr("&Новая запись");
+const QString AppResources::getNewRecordStr() {
+    return QObject::tr("Новая запись");
 }
 
 const QString AppResources::getFiltersStr() {
@@ -57,7 +45,15 @@ const QString AppResources::getRecordsStr(){
 }
 
 const QString AppResources::getFilesStr() {
-    return QObject::tr("Файлы");
+   return QObject::tr("Файлы");
+}
+
+const QString AppResources::getFileStr(){
+     return QObject::tr("Файл");
+}
+
+const QString AppResources::getRecordStr(){
+    return QObject::tr("Запись");
 }
 
 const QString AppResources::getFindStr() {
@@ -77,7 +73,11 @@ const QString AppResources::getFormatStr() {
 }
 
 const QString AppResources::getSizeStr() {
-    return QObject::tr("Размер,Kb");
+    return QObject::tr("Фактический размер,Kb");
+}
+
+const QString AppResources::getSizeZipStr(){
+    return QObject::tr("Размер в базе,Kb");
 }
 
 const QString AppResources::getOpenRecordStr() {
@@ -86,4 +86,92 @@ const QString AppResources::getOpenRecordStr() {
 
 const QString AppResources::getOpenFileStr() {
     return QObject::tr("Открыть файл");
+}
+
+const QString AppResources::getFavoritesStr(){
+    return QObject::tr("Избранное");
+}
+
+const QString AppResources::getTOPStr(){
+    return QObject::tr("ТОП");
+}
+
+const QString AppResources::getMenuStr(){
+    return QObject::tr("Меню");
+}
+
+const QString AppResources::getLastViewStr(){
+    return QObject::tr("Показать последние открытые");
+}
+
+const QString AppResources::getLastAddStr(){
+    return QObject::tr("Показать последние добавленные");
+}
+
+const QString AppResources::getDeleteLastViewStr(){
+    return QObject::tr("Очистить последние открытые");
+}
+
+const QString AppResources::getDeleteLastAddStr(){
+    return QObject::tr("Очистить последние добавленные");
+}
+
+const QString AppResources::getViewFavoritesStr(){
+    return QObject::tr("Показать избранное");
+}
+
+const QString AppResources::getAddFavoritesStr(){
+    return QObject::tr("Добавить в избранное");
+}
+
+const QString AppResources::getDeleteFavoritesStr(){
+    return QObject::tr("Убрать из избранного");
+}
+
+const QString AppResources::getDeleteFavoritesAllStr(){
+    return QObject::tr("Очистить избранное");
+}
+
+const QString AppResources::getFileDuplicateStr(){
+    return QObject::tr("Поиск файла в БД");
+}
+
+const QString AppResources::getDateFromStr(){
+    return QObject::tr("Дата с");
+}
+
+const QString AppResources::getDateToStr(){
+    return QObject::tr("Дата по");
+}
+
+const QString AppResources::getUpdateRecordStr(){
+    return QObject::tr("Редактировать запись");
+}
+
+const QString AppResources::getDeleteFileStr(){
+    return QObject::tr("Удалить файл");
+}
+
+const QString AppResources::getAddFileStr(){
+    return QObject::tr("Добавить файл");
+}
+
+const QString AppResources::getDeleteRecordStr(){
+    return QObject::tr("Удалить запись");
+}
+
+const QString AppResources::getConvert(){
+    return QObject::tr("Конвертация");
+}
+
+const QString AppResources::getHtmlToPDF(){
+     return QObject::tr("Htmls->pdf (wkhtmltopdf)");
+}
+
+const QString AppResources::getURLStr(){
+     return QObject::tr("URL");
+}
+
+const QString AppResources::getProcessStart(){
+     return QObject::tr("wkhtmltopdf запущен");
 }

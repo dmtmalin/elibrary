@@ -1,11 +1,13 @@
 #ifndef BOOKDIALOG_H
 #define BOOKDIALOG_H
 
+#include <objrecord.h>
 #include <appresources.h>
 #include <smartlineedit.h>
 #include <listwidgetdialog.h>
 #include <listwidgetdialogone.h>
 
+#include <QMap>
 #include <QLabel>
 #include <QDialog>
 #include <QWidget>
@@ -22,12 +24,11 @@ class BookDialog : public QDialog
 
 public:
     BookDialog(QWidget *parent = 0);
-    QString getName();
-    QString getAuthor();
-    QString getTheme();
-    QString getDescription();
-    QStringList getTags();
-    QStringList getFileNames();
+    void setRecord(ObjRecord &record);
+    void updateRecord(ObjRecord &record);
+    ObjRecord getRecord();
+    QStringList getFileNames();  
+    void setHiddenAddFilesButton(bool hidden);
     void setThemes(QStringList &arr);
     void setTags(QStringList &arr);
     void setName(QString name);
@@ -39,7 +40,8 @@ private:
     QTextEdit *textEditDescription;
     SmartLineEdit *lineEditTheme;
     SmartLineEdit *lineEditTags;
-    QStringList fileNames;
+    QPushButton *pushButtonAddFiles;
+    QStringList fileNames;    
 
 private slots:
     void on_pushButtonAddTheme_clicked();
