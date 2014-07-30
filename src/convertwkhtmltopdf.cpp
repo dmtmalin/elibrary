@@ -36,7 +36,7 @@ ConvertWkhtmltopdf::ConvertWkhtmltopdf(QWidget *parent, MyTracer *tracer, QStrin
 
     urlsList = new QListWidget();
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok|QDialogButtonBox::Cancel);
+    buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok|QDialogButtonBox::Cancel);
     connect(buttonBox, SIGNAL(accepted()), this, SLOT(on_accept()));
     connect(buttonBox, SIGNAL(rejected()), this, SLOT(on_reject()));
 
@@ -89,12 +89,9 @@ void ConvertWkhtmltopdf::finished_process(int exitCode){
 }
 
 void ConvertWkhtmltopdf::on_accept(){
-    if(process != 0 && process->isOpen()){
-        return;
-    }
 
     QString app_dir = QApplication::applicationDirPath();
-    QString program = app_dir + "/wkhtmltopdf/wkhtmltopdf";
+    QString program = app_dir + "/wkhtmltopdf/bin/wkhtmltopdf";
 
     QStringList arg = this->getArguments();
 
@@ -112,6 +109,9 @@ void ConvertWkhtmltopdf::on_accept(){
     item->setTextColor(Qt::green);
 
     urlsList->addItem(item);
+
+    buttonBox->setEnabled(false);
+
 }
 
 void ConvertWkhtmltopdf::on_reject(){

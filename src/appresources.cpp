@@ -161,7 +161,7 @@ const QString AppResources::getDeleteRecordStr(){
 }
 
 const QString AppResources::getConvert(){
-    return QObject::tr("Конвертация");
+    return QObject::tr("Преобразование");
 }
 
 const QString AppResources::getHtmlToPDF(){

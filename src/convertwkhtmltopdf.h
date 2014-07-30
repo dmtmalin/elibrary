@@ -28,6 +28,7 @@ private:
     QLineEdit *nameLineEdit;
     QLineEdit *urlLineEdit;
     QListWidget *urlsList;
+    QDialogButtonBox *buttonBox;
 
     QProcess *process;
 
